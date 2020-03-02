@@ -5,6 +5,7 @@
       Armaiz Adenwala - Computer Science Student At California State University,
       CA
     </title>
+    <meta name="description" content="An example website for deploying to CSUS ECS Athena using a Rakefile and rsync."/>
   </head>
   <body>
     <div>
@@ -39,15 +40,19 @@
     position: relative;
     background-color: #e7ebef;
     font-family: "arial";
+    padding: 0 16px;
   }
   div {
     background-color: #fafafa;
     border-radius: 8px;
-    margin: 16px 32px;
-    padding: 32px;
-    max-width: 560px;
+    padding: 64px;
     margin: 0 auto;
     margin-top: 32px;
+  }
+  @media screen and (min-device-width: 780px) {
+    div {
+      max-width: 560px;
+    }
   }
   h1,
   h2,
